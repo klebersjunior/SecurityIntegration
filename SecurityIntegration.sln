@@ -13,6 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityIntegration.Library", "SecurityIntegration.Library\SecurityIntegration.Library.csproj", "{4C59456C-E269-4AE7-945F-5BBF3D8780E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityIntegration.TenableDefectDojo", "SecurityIntegration.TenableDefectDojo\SecurityIntegration.TenableDefectDojo.csproj", "{65A85B46-2F1F-4BB0-9F71-F292D21A7167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityIntegration.SecurityScoreCardDefectDojo", "SecurityIntegration.SecurityScoreCardDefectDojo\SecurityIntegration.SecurityScoreCardDefectDojo.csproj", "{DB39F474-E8E7-4C7E-A6F9-0D855EB8F85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityIntegration.MobSFDefectDojo", "SecurityIntegration.MobSFDefectDojo\SecurityIntegration.MobSFDefectDojo.csproj", "{C50F103A-7A89-426B-836A-FC60D42EFCD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{4C59456C-E269-4AE7-945F-5BBF3D8780E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C59456C-E269-4AE7-945F-5BBF3D8780E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C59456C-E269-4AE7-945F-5BBF3D8780E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A85B46-2F1F-4BB0-9F71-F292D21A7167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A85B46-2F1F-4BB0-9F71-F292D21A7167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A85B46-2F1F-4BB0-9F71-F292D21A7167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A85B46-2F1F-4BB0-9F71-F292D21A7167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB39F474-E8E7-4C7E-A6F9-0D855EB8F85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB39F474-E8E7-4C7E-A6F9-0D855EB8F85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB39F474-E8E7-4C7E-A6F9-0D855EB8F85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB39F474-E8E7-4C7E-A6F9-0D855EB8F85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50F103A-7A89-426B-836A-FC60D42EFCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50F103A-7A89-426B-836A-FC60D42EFCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50F103A-7A89-426B-836A-FC60D42EFCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50F103A-7A89-426B-836A-FC60D42EFCD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

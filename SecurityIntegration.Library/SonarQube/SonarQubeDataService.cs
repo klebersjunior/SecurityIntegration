@@ -11,19 +11,19 @@ namespace SecurityIntegration.Library
 
     public class SonarQubeDataService
     {
-        public string DefectDojotUrl { get; set; }
+        public string SonarQubeUrl { get; set; }
         public SecureString ApiToken { get; set; }
 
         public SonarQubeDataService(string defectDojotUrl, SecureString apiToken)
         {
-            this.DefectDojotUrl = defectDojotUrl;
+            this.SonarQubeUrl = defectDojotUrl;
             this.ApiToken = apiToken;
         }
 
         public async Task<string> GetApiAsync(string arg)
         {
             var result = "";
-            var _urlapisf = DefectDojotUrl;
+            var _urlapisf = SonarQubeUrl;
             var _argument = arg;
 
             try
@@ -71,7 +71,7 @@ namespace SecurityIntegration.Library
         public async Task<string> DeleteApiAsync(string arg)
         {
             var result = "";
-            var _urlapisf = DefectDojotUrl;
+            var _urlapisf = SonarQubeUrl;
             var _argument = arg;
 
             try
@@ -118,7 +118,7 @@ namespace SecurityIntegration.Library
         public async Task<string> PutApiAsync(string body, string arg)
         {
             var result = "";
-            var _urlapisf = DefectDojotUrl;
+            var _urlapisf = SonarQubeUrl;
             var _argument = arg;
             var _body = body;
 
@@ -170,7 +170,7 @@ namespace SecurityIntegration.Library
         public async Task<string> PostApiAsync(string body, string arg)
         {
             var result = "";
-            var _urlapisf = DefectDojotUrl;
+            var _urlapisf = SonarQubeUrl;
             var _argument = arg;
             var _bodyContent = new StringContent(body, Encoding.UTF8, "application/json");
 

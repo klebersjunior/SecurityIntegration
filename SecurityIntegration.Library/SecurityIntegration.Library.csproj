@@ -10,6 +10,12 @@
     <None Remove="Microsoft.Extensions.Configuration" />
     <None Remove="Microsoft.Extensions.Configuration.FileExtensions" />
     <None Remove="Microsoft.Extensions.Configuration.Json" />
+    <None Remove="SonarQube\" />
+    <None Remove="DefectDojo\" />
+    <None Remove="GoogleSheet\" />
+    <None Remove="Tenable\" />
+    <None Remove="MobSF\" />
+    <None Remove="SecurityScoreCard\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Google.Apis.Sheets.v4" Version="1.55.0.2371" />
@@ -21,5 +27,13 @@
     <EmbeddedResource Include="google-credentials.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SonarQube\" />
+    <Folder Include="DefectDojo\" />
+    <Folder Include="GoogleSheet\" />
+    <Folder Include="Tenable\" />
+    <Folder Include="MobSF\" />
+    <Folder Include="SecurityScoreCard\" />
   </ItemGroup>
 </Project>
