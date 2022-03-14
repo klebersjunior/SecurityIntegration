@@ -1,26 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SecurityIntegration.Library\SecurityIntegration.Library.csproj" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Remove="Google.Apis.Sheets.v4" />
+    <None Remove="google-credentials.json" />
     <None Remove="Microsoft.Extensions.Configuration" />
     <None Remove="Microsoft.Extensions.Configuration.FileExtensions" />
     <None Remove="Microsoft.Extensions.Configuration.Json" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.55.0.2371" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="appsettings.json">
+    <EmbeddedResource Include="google-credentials.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
